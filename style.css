@@ -641,6 +641,14 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 
+.access-notice {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 6px;
+  line-height: 1.6;
+}
+
 .access-map {
   border-radius: var(--radius-md);
   overflow: hidden;
