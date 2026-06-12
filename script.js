@@ -33,11 +33,19 @@ if (backToTop) {
   window.addEventListener('scroll', () => {
     backToTop.classList.toggle('visible', window.scrollY > 300);
   }, { passive: true });
+
+  backToTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
 
 // ---- スクロールアニメーション（Intersection Observer）----
 const animatables = document.querySelectorAll(
-  '.concept-card, .menu-card, .owner-content, .rental-content, .access-grid, .reservation-notice'
+  '.calendar-container, .concept-card, .menu-card, .owner-content, .rental-content, .access-grid, .reservation-notice'
 );
 
 const observer = new IntersectionObserver(

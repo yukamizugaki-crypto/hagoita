@@ -13,10 +13,10 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body id="top">
 
   <!-- ========== HEADER / HERO ========== -->
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="header-inner">
       <div class="header-logo">
         <span class="logo-kanji">羽子板</span>
@@ -24,6 +24,7 @@
       </div>
       <nav class="header-nav" id="main-nav" aria-label="メインナビゲーション">
         <ul>
+          <li><a href="#calendar">カレンダー</a></li>
           <li><a href="#concept">コンセプト</a></li>
           <li><a href="#menu">メニュー</a></li>
           <li><a href="#owner">お店について</a></li>
@@ -54,6 +55,25 @@
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fdf6ec"/>
       </svg>
+    </div>
+  </section>
+
+  <!-- ========== CALENDAR ========== -->
+  <section class="section calendar" id="calendar">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-en">Calendar</span>
+        <h2 class="section-title">営業カレンダー</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="calendar-intro">
+        日々の営業スケジュール、臨時休業、イベントなどの情報をご確認いただけます。
+      </p>
+      <div class="calendar-container">
+        <div class="calendar-iframe-wrap">
+          <iframe src="https://calendar.google.com/calendar/embed?src=hagoita.cafe%40gmail.com&ctz=Asia%2FTokyo&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0" style="border: 0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -227,7 +247,7 @@
         </div>
         <div class="access-map" id="map-embed">
           <iframe
-            src="https://maps.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E4%B8%AD%E5%B8%82%E8%9B%8D%E6%B1%A0%E4%B8%AD%E7%94%BA3%E4%B8%81%E7%9B%AE10-3&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.9942732958316!2d135.447816!3d34.7935193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f151c61a6cb5%3A0x9272a2d1f2183ad0!2z57695a2Q5p2_!5e0!3m2!1sja!2sjp!5m2!1sja!2sjp"
             width="100%"
             height="400"
             style="border:0;"
@@ -255,6 +275,7 @@
         <p>月・火・木・金　11:15〜19:30　｜　定休日：水・土・日</p>
       </div>
       <div class="footer-nav">
+        <a href="#calendar">カレンダー</a>
         <a href="#concept">コンセプト</a>
         <a href="#menu">メニュー</a>
         <a href="#owner">お店について</a>
